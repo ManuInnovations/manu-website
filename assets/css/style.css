@@ -21,7 +21,7 @@ Text Domain: flusk
 * 05.0 - Recent works
 * 06.0 - Services
 * 07.0 - Blog
-* 08.0 - Testimonials
+* 08.0 - Team
 * 09.0 - Contact
 * 10.0 - Footer
 * 11.0 - Responsive styles
@@ -363,18 +363,18 @@ h1, h2, h3, h4, h5, h6{
 
 
 /*////////////////////////////////////////////////////////////////////////
-//  08 - Testimonials
+//  08 - Team
 ///////////////////////////////////////////////////////////////////////*/
 
 
-#testimonials{
+#team{
 	text-align: center;
 }
-#testimonials .testimonial > img {
+#team .testimonial > img {
     border-radius: 100%;
     margin-bottom: 15px;
 }
-#testimonials .testimonial {
+#team .testimonial {
 	padding: 25px;
 }
 
