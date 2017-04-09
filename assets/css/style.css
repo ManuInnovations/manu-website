@@ -163,9 +163,10 @@ h1, h2, h3, h4, h5, h6{
     padding-top: 8px;
 }
 
-#header .logo, #header .toggleDrawer{
+#header .logo, #header .toggleDrawer {
 	font-family: 'Alegreya SC';
 	color: white;
+	font-size: 1.5em;
 }
 
 #header .slogan{
@@ -427,6 +428,10 @@ h1, h2, h3, h4, h5, h6{
 @media (max-width: 767px){
 	#header .slogan {
 		font-size: 2.8em;
+	}
+
+	#header .logo, #header .toggleDrawer {
+		font-size: 1.3em;
 	}
 
 	#header .secondary-slogan {
