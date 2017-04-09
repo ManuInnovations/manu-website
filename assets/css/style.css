@@ -53,7 +53,10 @@ body {
 	background: #f1f0f0;
 }
 
-p {margin: 0 0 20px 0;	}
+p {
+	margin: 0 0 20px 0;
+	font-size: 1.6em;
+}
 
 img {max-width: 100%;}
 
@@ -112,7 +115,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header.header-wrapper {
-	background: url(../images/tui.jpg) no-repeat center center;
+	background: url(../images/feather-background.jpg) no-repeat center center;
 	background-size: cover;
 	display: table;
 	height: 100vh;
@@ -171,21 +174,23 @@ h1, h2, h3, h4, h5, h6{
 
 #header .slogan{
 	font-size: 4em;
+	margin: auto;
 	margin-bottom: 15px;
 	line-height: 1em;
 	font-family: 'Nixie One';
 	color: white;
 	background: rgba(76, 175, 80, 0.3);
-	width: 30%;
+	width: 80%;
 }
 
 #header .secondary-slogan{
+	margin: auto;
 	font-size: 1.6em;
-	color: rgba(255,255,255,.5);
-	line-height: 1em;
+	color: rgba(255,255,255,.9);
+	line-height: 2em;
 	font-family: 'Alegreya SC';
 	background: rgba(76, 175, 80, 0.3);
-	width: 30%;
+	width: 60%;
 
 }
 
