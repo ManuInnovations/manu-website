@@ -53,7 +53,6 @@ body {
 }
 
 p {
-	margin: 0 0 20px 0;
 	font-size: 1.6em;
 }
 
@@ -173,22 +172,23 @@ h1, h2, h3, h4, h5, h6{
 
 #header .slogan{
 	font-size: 4em;
+	font-weight: bold;
 	margin: auto;
 	margin-bottom: 15px;
 	line-height: 1em;
 	font-family: 'Nixie One';
 	color: white;
-	background: rgba(76, 175, 80, 0.3);
+	background: rgba(88, 168, 195, 0.3);
 	width: 80%;
 }
 
 #header .secondary-slogan{
 	margin: auto;
-	font-size: 1.6em;
-	color: rgba(255,255,255,.9);
+	font-size: 2em;
+	color: white;
 	line-height: 2em;
 	font-family: 'Alegreya SC';
-	background: rgba(76, 175, 80, 0.3);
+	background: rgba(88, 168, 195, 0.3);
 	width: 60%;
 
 }
