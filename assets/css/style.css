@@ -379,25 +379,46 @@ h1, h2, h3, h4, h5, h6{
 }
 #contact h1{color: white}
 
-.form-control-white {
+#email-btn {
+	border: 1px solid white;
+	max-width: 200px;
+	margin: auto;
+}
+
+a:hover #email-btn {
+	background-color: white;
+}
+
+#phone-btn {
+	border: 1px solid white;
+	max-width: 200px;
+	margin: auto;
+}
+
+a:hover #phone-btn {
+	background-color: white;
+}
+
+/*.form-control-white {
     background: transparent;
     color: white;
 }
 
-.form-control-white::-webkit-input-placeholder { /* WebKit browsers */
+.form-control-white::-webkit-input-placeholder {
     color:    white;
 }
-.form-control-white:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    white;
-    opacity:  1;
-}
-.form-control-white::-moz-placeholder { /* Mozilla Firefox 19+ */
+
+.form-control-white:-moz-placeholder {
     color:    white;
     opacity:  1;
 }
-.form-control-white:-ms-input-placeholder { /* Internet Explorer 10+ */
+.form-control-white::-moz-placeholder {
     color:    white;
+    opacity:  1;
 }
+.form-control-white:-ms-input-placeholder {
+    color:    white;
+}*/
 
 
 /*////////////////////////////////////////////////////////////////////////
