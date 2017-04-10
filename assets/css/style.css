@@ -152,9 +152,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header .logo, #header .toggleDrawer {
-	font-family: 'Alegreya', serif;
+	font-family: 'Alegreya Sans', sans-serif;
 	color: white;
-	font-size: 2em;
+	font-size: 1.7em;
 }
 
 #header .slogan{
@@ -174,7 +174,8 @@ h1, h2, h3, h4, h5, h6{
 	font-size: 2em;
 	color: white;
 	line-height: 2em;
-	font-family: 'Alegreya', serif;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 500;
 	background: rgba(88, 168, 195, 0.3);
 	width: 60%;
 }
@@ -424,10 +425,12 @@ color:    white;
 
 
 #footer{
-	background: #2B3E51;
+	background: #475B6F;
 	color: white;
 	text-align: center;
 	margin: auto;
+	height: auto;
+	padding: 15px;
 }
 
 
@@ -443,7 +446,7 @@ color:    white;
 	}*/
 
 	#header .logo, #header .toggleDrawer {
-		font-size: 1.4em;
+		font-size: 1.3em;
 	}
 
 	#header .slogan{
