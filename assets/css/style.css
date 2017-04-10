@@ -360,6 +360,10 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 }
 
+#team i {
+	font-size: 30px;
+}
+
 #team .personal-bio {
 	padding: 25px;
 }
