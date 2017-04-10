@@ -452,16 +452,17 @@ a:hover #phone-btn {
 
 
 @media (max-width: 767px){
-	#header .slogan {
+	/*#header .slogan {
 		font-size: 2.8em;
-	}
+	}*/
 
 	#header .logo, #header .toggleDrawer {
 		font-size: 1.3em;
 	}
 
 	#header .secondary-slogan {
-		font-size: 1.2em;
+		font-size: 1.7em;
+		line-height: normal;
 	}
 
 	#header .bottom {
