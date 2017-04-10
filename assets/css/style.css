@@ -165,9 +165,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header .logo, #header .toggleDrawer {
-	font-family: 'Alegreya SC';
+	/*font-family: 'Alegreya SC';*/
+	/*font-family: 'Orbitron', sans-serif;*/
+	/*font-family: 'Ubuntu', sans-serif;*/
+	/*font-family: 'Poppins', sans-serif;*/
+	/*font-family: 'Dancing Script', cursive;*/
+	font-family: 'Berkshire Swash', cursive;
+
+	font-weight: bold;
 	color: white;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 #header .slogan{
@@ -176,7 +183,10 @@ h1, h2, h3, h4, h5, h6{
 	margin: auto;
 	margin-bottom: 15px;
 	line-height: 1em;
-	font-family: 'Nixie One';
+	/*font-family: 'Nixie One';*/
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: 'Oswald', sans-serif;*/
 	color: white;
 	background: rgba(88, 168, 195, 0.3);
 	width: 80%;
@@ -187,7 +197,10 @@ h1, h2, h3, h4, h5, h6{
 	font-size: 2em;
 	color: white;
 	line-height: 2em;
-	font-family: 'Alegreya SC';
+	/*font-family: 'Alegreya SC';*/
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
+	/*font-family: 'Poppins', sans-serif;*/
 	background: rgba(88, 168, 195, 0.3);
 	width: 60%;
 
