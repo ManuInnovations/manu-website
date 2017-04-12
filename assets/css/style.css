@@ -522,4 +522,7 @@ color:    white;
 	#header .slogan{
 		font-size: 2.5em;
 	}
+	#team .personal-bio > img {
+		width: 50%;
+	}
 }
