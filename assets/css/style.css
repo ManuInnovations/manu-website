@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: bold;
 	margin: auto;
 	margin-bottom: 15px;
-	line-height: 1em;
+	line-height: 1.5em;
 	letter-spacing: .05em;
 	font-family: 'Nixie One';
 	color: white;
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Alegreya Sans', sans-serif;
 	font-weight: 500;
 	background: rgba(88, 168, 195, 0.5);
-	width: 70%;
+	width: 60%;
 }
 
 #header .bottom {
@@ -354,6 +354,10 @@ h1, h2, h3, h4, h5, h6{
 
 #team .personal-bio {
 	padding: 25px;
+}
+
+#proverb i {
+	font-size: .5em;
 }
 
 
