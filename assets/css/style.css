@@ -348,6 +348,13 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 }
 
+#team .personal-bio > img {
+    border-radius: 100%;
+    margin-bottom: 15px;
+		border: 2px solid;
+		border-color: grey;
+}
+
 #team i {
 	font-size: 30px;
 }
@@ -358,6 +365,10 @@ h1, h2, h3, h4, h5, h6{
 
 #proverb i {
 	font-size: .5em;
+}
+
+#team .block-heading {
+	margin-bottom: -50px;
 }
 
 
