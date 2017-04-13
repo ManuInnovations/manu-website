@@ -274,7 +274,9 @@ h1, h2, h3, h4, h5, h6{
 /*////////////////////////////////////////////////////////////////////////
 //  05 - Stuff We Love
 ///////////////////////////////////////////////////////////////////////*/
-
+#love {
+	text-align: center;
+}
 .love-stuff {
 	width: 100%;
 	padding-bottom: 27%;
@@ -352,6 +354,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 15px;
 		border: 2px solid;
 		border-color: grey;
+		max-width: 30%;
 }
 
 #team i {
@@ -453,7 +456,11 @@ color:    white;
 /*////////////////////////////////////////////////////////////////////////
 //  10 - Responsive styles
 ///////////////////////////////////////////////////////////////////////*/
-
+@media (max-width: 1023px){
+	#team .personal-bio > img {
+			max-width: 20%;
+	}
+}
 
 @media (max-width: 767px){
 	/*#header .slogan {
@@ -475,6 +482,10 @@ color:    white;
 
 	#header .bottom {
 		bottom: 13%;
+	}
+
+	#team .personal-bio > img {
+			max-width: 40%;
 	}
 
 	.blog-post {
