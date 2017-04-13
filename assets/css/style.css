@@ -88,6 +88,10 @@ h1, h2, h3, h4, h5, h6{
 	color: #6a6a6a;
 }
 
+#value-btn {
+	cursor: default;
+}
+
 
 /*////////////////////////////////////////////////////////////////////////
 //  02 - Header
@@ -277,6 +281,23 @@ h1, h2, h3, h4, h5, h6{
 #love {
 	text-align: center;
 }
+
+#values {
+	text-decoration: none;
+	outline: none;
+	cursor: default;
+}
+
+#values {
+	color: #4da7ca;
+	-o-transition: all .4s;
+	-ms-transition: all .4s;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+
+
 .love-stuff {
 	width: 100%;
 	padding-bottom: 27%;
