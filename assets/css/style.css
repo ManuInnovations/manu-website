@@ -283,18 +283,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #values {
-	text-decoration: none;
-	outline: none;
-	cursor: default;
-}
-
-#values {
 	color: #4da7ca;
 	-o-transition: all .4s;
 	-ms-transition: all .4s;
 	-moz-transition: all .4s;
 	-webkit-transition: all .4s;
 	transition: all .4s;
+	text-decoration: none;
+	outline: none;
+	cursor: default;
 }
 
 
