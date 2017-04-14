@@ -560,10 +560,4 @@ color:    white;
 	#team .personal-bio > img {
 		width: 50%;
 	}
-	#services {
-	background-size: cover;
-	}
-	#contact {
-		background-size: auto;
-	}
 }
