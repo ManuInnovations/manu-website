@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #services {
-	background-image: url(../images/services.jpg);
+	/*background-image: url(../images/services.jpg);*/
 	color: white;
 }
 #contact {
