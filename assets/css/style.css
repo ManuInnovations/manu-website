@@ -267,9 +267,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #services {
-	/*background-image: url(../images/services.jpg);*/
+	background-image: url(../images/services.jpg);
 	color: white;
-	background-size: 100%;
 }
 #contact {
 	background-image: url(../images/postage.jpg);
@@ -560,5 +559,8 @@ color:    white;
 	}
 	#team .personal-bio > img {
 		width: 50%;
+	}
+	.content-block{
+		background-attachment: scroll;
 	}
 }
