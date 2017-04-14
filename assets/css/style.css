@@ -561,6 +561,6 @@ color:    white;
 		width: 50%;
 	}
 	.content-block{
-		background-attachment: scroll;
+		background-attachment: inherit;
 	}
 }
