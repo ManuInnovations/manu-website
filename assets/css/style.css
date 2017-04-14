@@ -169,19 +169,20 @@ h1, h2, h3, h4, h5, h6{
 	letter-spacing: .05em;
 	font-family: 'Nixie One';
 	color: white;
-	background: rgba(88, 168, 195, 0.5);
+	background: rgba(88, 168, 195, 0.6);
 	width: 80%;
 }
 
 #header .secondary-slogan{
 	margin: auto;
-	font-size: 2em;
+	font-size: 2.5em;
+	font-weight: bold;
 	letter-spacing: .05em;
 	color: white;
 	line-height: 2em;
 	font-family: 'Alegreya Sans', sans-serif;
 	font-weight: 500;
-	background: rgba(88, 168, 195, 0.5);
+	background: rgba(88, 168, 195, 0.6);
 	width: 60%;
 }
 
