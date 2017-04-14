@@ -368,7 +368,7 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 }
 
-#team .personal-bio > img {
+#team .personal-bio > img {     /****  Team images ****/
     border-radius: 100%;
     margin-bottom: 15px;
 		border: 2px solid;
@@ -376,7 +376,7 @@ h1, h2, h3, h4, h5, h6{
 		max-width: 40%;
 }
 
-#team i {
+#team i {      /**** Font awesome icons ****/
 	font-size: 30px;
 }
 
