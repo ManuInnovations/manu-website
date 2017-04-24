@@ -1,0 +1,21 @@
+This zip file contains optimized resources for http://www.manu.net.nz/. The optimized resources are listed below in the format of: 
+filename: url
+
+Note: We only include up to 10 MB of optimized contents. If the
+optimized contents of your page are larger than 10 MB, we list them in
+this file too, with 'NOT INCLUDED' to indicate those URLs require
+further optimization.
+
+css/style.css: http://www.manu.net.nz/assets/css/style.css
+js/jquery.actual.min.js: http://www.manu.net.nz/assets/js/jquery.actual.min.js
+js/jquery.scrollTo.min.js: http://www.manu.net.nz/assets/js/jquery.scrollTo.min.js
+js/script.js: http://www.manu.net.nz/assets/js/script.js
+image/meghan.jpg: http://www.manu.net.nz/assets/images/meghan.jpg
+image/anna.jpg: http://www.manu.net.nz/assets/images/anna.jpeg
+image/janie.jpg: http://www.manu.net.nz/assets/images/janie.jpg
+image/email.png: http://www.manu.net.nz/assets/images/email.png
+image/arrow_up.png: http://www.manu.net.nz/assets/images/arrow_up.png
+image/feather-background.jpg: http://www.manu.net.nz/assets/images/feather-background.jpg
+image/weka.png: http://www.manu.net.nz/assets/images/weka.png
+image/services.jpg: http://www.manu.net.nz/assets/images/services.jpg
+image/postage.jpg: http://www.manu.net.nz/assets/images/postage.jpg
