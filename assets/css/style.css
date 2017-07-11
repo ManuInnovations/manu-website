@@ -1,4 +1,20 @@
-/**GENERAL STYLES**/
+/**
+
+ General Styles
+ Header
+ Stuff We Love
+ What We Do
+ Team Manu
+ About Us
+ Manu Blog
+ Contact Us
+ Footer
+ Media Queries
+
+ **/
+
+
+/**General Styles**/
 
 * {
     outline: none !important;
@@ -81,8 +97,29 @@ h6 {
     color: #6a6a6a;
 }
 
+.content-block {
+    background: transparent no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    padding: 60px 0;
+}
 
-/**HEADER STYLES**/
+.parallax {
+    padding: 80px 0;
+}
+
+.block-body {
+    margin-top: 60px;
+}
+
+/**Header**/
 
 #header {
     position: relative;
@@ -226,47 +263,7 @@ h6 {
     color: white;
 }
 
-/**MAIN CONTENT STYLES**/
-
-.content-block {
-    background: transparent no-repeat center center fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    overflow: hidden;
-    padding: 60px 0;
-}
-
-.parallax {
-    padding: 80px 0;
-}
-
-.block-body {
-    margin-top: 60px;
-}
-
-/**SERVICES SECTION**/
-
-#services {
-    background-image: url(../images/services.jpg);
-    color: white;
-}
-
-/**CONTACT US SECTION**/
-
-#contact {
-    background-image: url(../images/postage.jpg);
-    color: white;
-    background-color: #405162;
-    background-size: cover;
-}
-
-/**STUFF WE LOVE/ VALUES SECTION**/
+/**Stuff We Love**/
 
 #love {
     text-align: center;
@@ -336,10 +333,15 @@ h6 {
     opacity: 1;
 }
 
-/**SERVICES STYLES**/
+/**What We Do**/
 
 #services h1,
 #services h2 {
+    color: white;
+}
+
+#services {
+    background-image: url(../images/services.jpg);
     color: white;
 }
 
@@ -351,7 +353,7 @@ h6 {
     padding: 0 25px;
 }
 
-/**TEAM STYLES**/
+/**Team Manu**/
 
 #team {
     text-align: center;
@@ -377,7 +379,7 @@ h6 {
     margin-bottom: -50px;
 }
 
-/**ABOUT US STYLES**/
+/**About Us**/
 
 #proverb {
     font-size: 1.5em;
@@ -388,10 +390,18 @@ h6 {
     text-align: left;
 }
 
-/**CONTACT STYLES**/
+/**Manu Blog**/
+
+
+
+
+/**Contact Us**/
 
 #contact {
+    background-image: url(../images/postage.jpg);
     color: white;
+    background-color: #405162;
+    background-size: cover;
 }
 
 #contact h1 {
@@ -431,7 +441,7 @@ a:hover #phone-btn {
     opacity: 1;
 }
 
-/**FOOTER STYLES**/
+/**Footer**/
 
 #footer {
     background: #475B6F;
@@ -442,7 +452,7 @@ a:hover #phone-btn {
     padding: 15px;
 }
 
-/**MEDIA QUERIES**/
+/**Media Queries**/
 
 @media screen and (max-width:767px) and (orientation:landscape) {
   #header.header-wrapper {
