@@ -390,6 +390,16 @@ h6 {
     text-align: left;
 }
 
+#about h1,
+#about h2 {
+    color: white;
+}
+
+#about {
+    background-image: url(../images/feather-background2.jpg);
+    color: white;
+}
+
 /**Manu Blog**/
 
 
