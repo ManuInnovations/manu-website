@@ -403,7 +403,38 @@ h6 {
 /**Manu Blog**/
 
 
+#blog {
+    text-align: center;
+}
 
+#blog .personal-bio > img {
+    border-radius: 100%;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-color: grey;
+    max-width: 40%;
+}
+
+#blog i {
+    font-size: 30px;
+}
+
+#blog .block-heading {
+    margin-bottom: -50px;
+}
+
+#more {
+  display: none;
+}
+
+#more:target {
+  display: block;
+  text-align: left;
+}
+
+#lead {
+  text-align: left;
+}
 
 /**Contact Us**/
 
