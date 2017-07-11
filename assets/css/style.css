@@ -1,3 +1,5 @@
+/**GENERAL STYLES**/
+
 * {
     outline: none !important;
 }
@@ -31,9 +33,6 @@ img {
 a {
     text-decoration: none;
     outline: none;
-}
-
-a {
     color: #4da7ca;
     -o-transition: all .4s;
     -ms-transition: all .4s;
@@ -82,9 +81,8 @@ h6 {
     color: #6a6a6a;
 }
 
-#value-btn {
-    cursor: default;
-}
+
+/**HEADER STYLES**/
 
 #header {
     position: relative;
@@ -100,14 +98,6 @@ h6 {
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-}
-
-@media screen and (max-width:767px) and (orientation:landscape) {
-    #header.header-wrapper {
-        height: auto;
-        min-height: 100vh;
-        padding: 0px;
-    }
 }
 
 #header.header-wrapper .header-wrapper-inner {
@@ -236,6 +226,8 @@ h6 {
     color: white;
 }
 
+/**MAIN CONTENT STYLES**/
+
 .content-block {
     background: transparent no-repeat center center fixed;
     -webkit-background-size: 100%;
@@ -258,10 +250,14 @@ h6 {
     margin-top: 60px;
 }
 
+/**SERVICES SECTION**/
+
 #services {
     background-image: url(../images/services.jpg);
     color: white;
 }
+
+/**CONTACT US SECTION**/
 
 #contact {
     background-image: url(../images/postage.jpg);
@@ -269,6 +265,8 @@ h6 {
     background-color: #405162;
     background-size: cover;
 }
+
+/**STUFF WE LOVE/ VALUES SECTION**/
 
 #love {
     text-align: center;
@@ -283,6 +281,10 @@ h6 {
     transition: all .4s;
     text-decoration: none;
     outline: none;
+    cursor: default;
+}
+
+#value-btn {
     cursor: default;
 }
 
@@ -334,6 +336,8 @@ h6 {
     opacity: 1;
 }
 
+/**SERVICES STYLES**/
+
 #services h1,
 #services h2 {
     color: white;
@@ -346,6 +350,8 @@ h6 {
 .service {
     padding: 0 25px;
 }
+
+/**TEAM STYLES**/
 
 #team {
     text-align: center;
@@ -367,18 +373,22 @@ h6 {
     padding: 25px;
 }
 
+#team .block-heading {
+    margin-bottom: -50px;
+}
+
+/**ABOUT US STYLES**/
+
 #proverb {
     font-size: 1.5em;
     text-align: center;
 }
 
-#team .block-heading {
-    margin-bottom: -50px;
-}
-
 .about-manu {
     text-align: left;
 }
+
+/**CONTACT STYLES**/
 
 #contact {
     color: white;
@@ -421,6 +431,8 @@ a:hover #phone-btn {
     opacity: 1;
 }
 
+/**FOOTER STYLES**/
+
 #footer {
     background: #475B6F;
     color: white;
@@ -428,6 +440,16 @@ a:hover #phone-btn {
     margin: auto;
     height: auto;
     padding: 15px;
+}
+
+/**MEDIA QUERIES**/
+
+@media screen and (max-width:767px) and (orientation:landscape) {
+  #header.header-wrapper {
+      height: auto;
+      min-height: 100vh;
+      padding: 0px;
+  }
 }
 
 @media (max-width:1023px) {
