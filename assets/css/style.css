@@ -1,93 +1,572 @@
-*{outline:none !important;}
-::selection{background-color:#475B6F;color:#fff;}
-html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;overflow-y:scroll;}
-body{color:#6a6a6a;background:#f1f0f0;}
-p{font-size:1.6em;}
-img{max-width:100%;}
-a{text-decoration:none;outline:none;}
-a{color:#4da7ca;-o-transition:all .4s;-ms-transition:all .4s;-moz-transition:all .4s;-webkit-transition:all .4s;transition:all .4s;}
-a:hover{color:#4290ae;}
-h1, h2, h3, h4, h5, h6{margin:0 0 15px 0;color:#3A4F52;font-family:'Alegreya Sans';}
-.btn{border-radius:0;}
-.btn-o{border:1px solid #3A4F52;color:#3A4F52;}
-.btn-o:hover{background:#3A4F52;color:white;}
-.btn.btn-o-white{border:1px solid white;color:white;background:transparent;}
-.btn.btn-o-white:hover{background:white;color:#6a6a6a;}
-#value-btn{cursor:default;}
-#header{position:relative;padding:0 !important;}
-#header.header-wrapper{background:url(../images/feather-background.jpg) no-repeat center center;background-size:cover;display:table;height:100vh;width:100%;position:relative;z-index:1;overflow-x:hidden;}
-@media screen and (max-width:767px) and (orientation:landscape){#header.header-wrapper{height:auto;min-height:100vh;padding:0px;}
+/**
+
+ General Styles
+ Header
+ Stuff We Love
+ What We Do
+ Team Manu
+ About Us
+ Manu Blog
+ Contact Us
+ Footer
+ Media Queries
+
+ **/
+
+
+/**General Styles**/
+
+* {
+    outline: none !important;
 }
-#header.header-wrapper .header-wrapper-inner{display:table-cell;text-align:center;vertical-align:middle;}
-#header .top{position:fixed;top:0;width:100%;padding:30px;height:auto;z-index:500;-o-transition:all .5s;-ms-transition:all .5s;-moz-transition:all .5s;-webkit-transition:all .5s;transition:all .5s;}
-#header .top.solid{background:#475B6F;padding-top:15px;padding-bottom:15px;}
-#header .top h1{margin-bottom:0;}
-#header .top.solid .toggleDrawer i{padding-top:8px;}
-#header .logo, #header .toggleDrawer{font-family:'Alegreya Sans', sans-serif;color:white;font-size:1.7em;}
-#header .slogan{font-size:3.6em;font-weight:bold;margin:auto;margin-bottom:15px;line-height:1.5em;letter-spacing:.05em;font-family:'Nixie One';color:white;background:rgba(88, 168, 195, 0.6);width:80%;}
-#header .secondary-slogan{margin:auto;font-size:2.5em;font-weight:bold;letter-spacing:.05em;color:white;line-height:2em;font-family:'Alegreya Sans', sans-serif;font-weight:500;background:rgba(88, 168, 195, 0.6);width:60%;}
-#header .bottom{bottom:10%;display:block;position:absolute;width:100%;z-index:3;}
-#header .bottom a img{width:50px;}
-#header .bottom a{opacity:0.7;}
-#header .bottom a:hover{opacity:1;}
-#drawer-right{position:fixed;right:0;top:0;bottom:0;margin-right:-300px;background:#2B3E51;width:300px;padding:20px;z-index:999;}
-#drawer-right h1, #drawer-right h2{color:white;}
-#drawer-right .nav-pills>li>a{font-size:18px;border-radius:0;}
-#drawer-right .social{margin-top:30px}
-#drawer-right .social ul{list-style:none;padding-left:20px;}
-#drawer-right .social ul > li{display:inline-block;}
-#drawer-right .social ul > li > a:hover{color:white;}
-.content-block{background:transparent no-repeat center center fixed;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-size:100%;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;overflow:hidden;padding:60px 0;}
-.parallax{padding:80px 0;}
-.block-body{margin-top:60px;}
-#services{background-image:url(../images/services.jpg);color:white;}
-#contact{background-image:url(../images/postage.jpg);color:white;background-color:#405162;background-size:cover;}
-#love{text-align:center;}
-#values{color:#4da7ca;-o-transition:all .4s;-ms-transition:all .4s;-moz-transition:all .4s;-webkit-transition:all .4s;transition:all .4s;text-decoration:none;outline:none;cursor:default;}
-.love-stuff{width:100%;padding-bottom:27%;background:#C3C9CC;display:table;text-align:center;vertical-align:middle;padding-top:27%;background-size:100%;background-repeat:no-repeat;background-position:center;position:relative;margin-bottom:30px;}
-.love-stuff span{margin-top:-18px;opacity:0;position:relative;z-index:1;}
-.love-stuff:before{background:rgba(2, 56, 58, 0.7);height:100%;width:100%;position:absolute;left:0;top:0;content:'';opacity:0;-o-transition:all .2s;-ms-transition:all .2s;-moz-transition:all .2s;-webkit-transition:all .2s;transition:all .2s;}
-.love-stuff:hover{background-size:200%;background-position:center;}
-.love-stuff:hover:before, .love-stuff:hover span{opacity:1;}
-#services h1, #services h2{color:white;}
-.service i{font-size:60px;}
-.service{padding:0 25px;}
-#team{text-align:center;}
-#team .personal-bio > img{border-radius:100%;margin-bottom:15px;border:2px solid;border-color:grey;max-width:40%;}
-#team i{font-size:30px;}
-#team .personal-bio{padding:25px;}
-#proverb{font-size:1.5em;text-align:center;}
-#team .block-heading{margin-bottom:-50px;}
-.about-manu{text-align:left;}
-#contact{color:white;}
-#contact h1{color:white}
-#email-btn{border:1px solid white;max-width:200px;margin:auto;}
-a:hover #email-btn{background-color:white;}
-#phone-btn{border:1px solid white;max-width:200px;margin:auto;}
-a:hover #phone-btn{background-color:white;}
-#contact .bottom a img{width:50px;margin-top:5em;}
-#contact .bottom a{opacity:0.7;}
-#contact .bottom a:hover{opacity:1;}
-#footer{background:#475B6F;color:white;text-align:center;margin:auto;height:auto;padding:15px;}
-@media (max-width:1023px){#team .personal-bio > img{max-width:20%;}
+
+::selection {
+    background-color: #475B6F;
+    color: #fff;
 }
-@media (max-width:767px){#header .logo, #header .toggleDrawer{font-size:1.3em;}
-#header .slogan{font-size:2.5em;}
-#header .secondary-slogan{font-size:1.7em;line-height:normal;}
-#header .bottom{bottom:13%;}
-#team .personal-bio > img{max-width:40%;}
-.blog-post{margin-bottom:40px;}
-.love-stuff{background-position:center;}
-.love-stuff:before{opacity:1;}
-.love-stuff span{opacity:1;}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    overflow-y: scroll;
 }
-@media (max-width:480px){#drawer-right{padding:10px 20px;}
-#drawer-right .nav-pills>li>a{font-size:17px;}
-.nav-stacked>li+li{margin-top:0;}
-.nav>li>a{padding:8px 15px;}
-#drawer-right .social{margin-top:5px;}
-#header{background-size:cover;}
-#header .slogan{font-size:2.5em;}
-#team .personal-bio > img{width:50%;}
-.content-block{background-attachment:inherit;}
+
+body {
+    color: #6a6a6a;
+    background: #f1f0f0;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #4da7ca;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+a:hover {
+    color: #4290ae;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px 0;
+    color: #3A4F52;
+    font-family: 'Alegreya Sans';
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-o {
+    border: 1px solid #3A4F52;
+    color: #3A4F52;
+}
+
+.btn-o:hover {
+    background: #3A4F52;
+    color: white;
+}
+
+.btn.btn-o-white {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn.btn-o-white:hover {
+    background: white;
+    color: #6a6a6a;
+}
+
+.content-block {
+    background: transparent no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.parallax {
+    padding: 80px 0;
+}
+
+.block-body {
+    margin-top: 60px;
+}
+
+/**Header**/
+
+#header {
+    position: relative;
+    padding: 0 !important;
+}
+
+#header.header-wrapper {
+    background: url(../images/feather-background.jpg) no-repeat center center;
+    background-size: cover;
+    display: table;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+#header.header-wrapper .header-wrapper-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#header .top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    height: auto;
+    z-index: 500;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+#header .top.solid {
+    background: #475B6F;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#header .top h1 {
+    margin-bottom: 0;
+}
+
+#header .top.solid .toggleDrawer i {
+    padding-top: 8px;
+}
+
+#header .logo,
+#header .toggleDrawer {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+    font-size: 1.7em;
+}
+
+#header .slogan {
+    font-size: 3.6em;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    letter-spacing: .05em;
+    font-family: 'Nixie One';
+    color: white;
+    background: rgba(88, 168, 195, 0.6);
+    width: 80%;
+}
+
+#header .secondary-slogan {
+    margin: auto;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: .05em;
+    color: white;
+    line-height: 2em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 500;
+    background: rgba(88, 168, 195, 0.6);
+    width: 60%;
+}
+
+#header .bottom {
+    bottom: 10%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+#header .bottom a img {
+    width: 50px;
+}
+
+#header .bottom a {
+    opacity: 0.7;
+}
+
+#header .bottom a:hover {
+    opacity: 1;
+}
+
+#drawer-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: -300px;
+    background: #2B3E51;
+    width: 300px;
+    padding: 20px;
+    z-index: 999;
+}
+
+#drawer-right h1,
+#drawer-right h2 {
+    color: white;
+}
+
+#drawer-right .nav-pills>li>a {
+    font-size: 18px;
+    border-radius: 0;
+}
+
+#drawer-right .social {
+    margin-top: 30px
+}
+
+#drawer-right .social ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+#drawer-right .social ul > li {
+    display: inline-block;
+}
+
+#drawer-right .social ul > li > a:hover {
+    color: white;
+}
+
+/**Stuff We Love**/
+
+#love {
+    text-align: center;
+}
+
+#values {
+    color: #4da7ca;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    text-decoration: none;
+    outline: none;
+    cursor: default;
+}
+
+#value-btn {
+    cursor: default;
+}
+
+.love-stuff {
+    width: 100%;
+    padding-bottom: 27%;
+    background: #C3C9CC;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 27%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.love-stuff span {
+    margin-top: -18px;
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.love-stuff:before {
+    background: rgba(2, 56, 58, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    opacity: 0;
+    -o-transition: all .2s;
+    -ms-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.love-stuff:hover {
+    background-size: 200%;
+    background-position: center;
+}
+
+.love-stuff:hover:before,
+.love-stuff:hover span {
+    opacity: 1;
+}
+
+/**What We Do**/
+
+#services h1,
+#services h2 {
+    color: white;
+}
+
+#services {
+    background-image: url(../images/services.jpg);
+    color: white;
+}
+
+.service i {
+    font-size: 60px;
+}
+
+.service {
+    padding: 0 25px;
+}
+
+/**Team Manu**/
+
+#team {
+    text-align: center;
+}
+
+#team .personal-bio > img {
+    border-radius: 100%;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-color: grey;
+    max-width: 40%;
+}
+
+#team i {
+    font-size: 30px;
+}
+
+#team .personal-bio {
+    padding: 25px;
+}
+
+#team .block-heading {
+    margin-bottom: -50px;
+}
+
+/**About Us**/
+
+#proverb {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.about-manu {
+    text-align: left;
+}
+
+#about h1,
+#about h2 {
+    color: white;
+}
+
+#about {
+    background-image: url(../images/feather-background2.jpg);
+    color: white;
+}
+
+/**Manu Blog*********************/
+
+
+#blog {
+    text-align: center;
+}
+
+#blog .personal-bio > img {
+    border-radius: 100%;
+    margin-bottom: 15px;
+    border: 2px solid;
+    border-color: grey;
+    max-width: 40%;
+}
+
+#blog i {
+    font-size: 30px;
+}
+
+#blog .block-heading {
+    margin-bottom: -50px;
+}
+
+#more {
+  display: none;
+}
+
+#more:target {
+  display: block;
+  text-align: left;
+}
+
+#lead {
+  text-align: left;
+}
+
+/** Contact Us ******************/
+
+#contact {
+    background-image: url(../images/postage.jpg);
+    color: white;
+    background-color: #405162;
+    background-size: cover;
+}
+
+#contact h1 {
+    color: white
+}
+
+#email-btn {
+    border: 1px solid white;
+    max-width: 200px;
+    margin: auto;
+}
+
+a:hover #email-btn {
+    background-color: white;
+}
+
+#phone-btn {
+    border: 1px solid white;
+    max-width: 200px;
+    margin: auto;
+}
+
+a:hover #phone-btn {
+    background-color: white;
+}
+
+#contact .bottom a img {
+    width: 50px;
+    margin-top: 5em;
+}
+
+#contact .bottom a {
+    opacity: 0.7;
+}
+
+#contact .bottom a:hover {
+    opacity: 1;
+}
+
+/**Footer**/
+
+#footer {
+    background: #475B6F;
+    color: white;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    padding: 15px;
+}
+
+/**Media Queries**/
+
+@media screen and (max-width:767px) and (orientation:landscape) {
+  #header.header-wrapper {
+      height: auto;
+      min-height: 100vh;
+      padding: 0px;
+  }
+}
+
+@media (max-width:1023px) {
+    #team .personal-bio > img {
+        max-width: 20%;
+    }
+}
+
+@media (max-width:767px) {
+    #header .logo,
+    #header .toggleDrawer {
+        font-size: 1.3em;
+    }
+    #header .slogan {
+        font-size: 2.5em;
+    }
+    #header .secondary-slogan {
+        font-size: 1.7em;
+        line-height: normal;
+    }
+    #header .bottom {
+        bottom: 13%;
+    }
+    #team .personal-bio > img {
+        max-width: 40%;
+    }
+    .blog-post {
+        margin-bottom: 40px;
+    }
+    .love-stuff {
+        background-position: center;
+    }
+    .love-stuff:before {
+        opacity: 1;
+    }
+    .love-stuff span {
+        opacity: 1;
+    }
+}
+
+@media (max-width:480px) {
+    #drawer-right {
+        padding: 10px 20px;
+    }
+    #drawer-right .nav-pills>li>a {
+        font-size: 17px;
+    }
+    .nav-stacked>li+li {
+        margin-top: 0;
+    }
+    .nav>li>a {
+        padding: 8px 15px;
+    }
+    #drawer-right .social {
+        margin-top: 5px;
+    }
+    #header {
+        background-size: cover;
+    }
+    #header .slogan {
+        font-size: 2.5em;
+    }
+    #team .personal-bio > img {
+        width: 50%;
+    }
+    .content-block {
+        background-attachment: inherit;
+    }
 }
