@@ -1,10 +1,10 @@
 window.onload = function(){
 
 var blogDiv = document.getElementById('blog-posts');
-
 var previousBlog = blogDiv.firstChild;
-
 var newBlog = document.createElement('div');
+
+
 newBlog.setAttribute('class', 'row blog_post');
 blogDiv.insertBefore(newBlog, previousBlog);
 
@@ -14,27 +14,46 @@ newBlog.innerHTML = `
       <h3>By Anna-Marie Vos</h3>
       <p><span class="fa fa-calendar"></span> Posted on August 22, 2017</p>
       <p id="lead">If like me, you’ve considered learning a new programming language, but wonder which one to pick first? I recommend Python. Let me tell you why it’s awesome.</p>
-      <h3><a href="#more">MORE</a></h3>
-      <div id="more">
-        <p>I am a big fan of Python. It’s an easy to read programming language and it works across all platforms (Windows, Linux and OS). It comes pre-installed on Linux, but I’d recommend you upgrade to the latest version (3.6.1, when I last checked). </p>
-        <p>Originally, I decided to learn Python because it’s widely used to program machine learning algorithms, which I am keen to experiment with. Another reason was that it is used on some nifty open source software packages such as Dynamo and Blender.</p>
-        <p>Overall, it’s a pretty cool programming language to learn. Most of the libraries are easy to install and you can quickly create little apps, without too much effort. If you want to make desktop apps, Python can help you do that. There are some really great tutorials and Udemy courses to help you on your way.</p>
-        <p>There are a number of pitfalls to be aware of.</p>
-        <ul>
-          <p><b>Python 2 versus Python 3</b></p>
-          <li>There are subtle differences between 2.7 and 3.5 or later. Some of the libraries haven’t been updated for over 3 years and it can be troublesome. MySql in particular caused me some grief.</li>
-          <p><b>Virtual Environments</b></p>
-          <li>I recommend using virtual environments when you make apps in Python. It keeps your apps neatly packaged.</li>
-          <p><b>Making Code work between Linux and Windows</b></p>
-          <li>Keep in mind that you will require different packages depending on which OS the app is interacting with.</li>
-        </ul>
-        <p>Overall I found Python easy to read. Documentation is thorough and fairly easy to follow.  Functions such as For Loops, for example, are very straight-forward to write. Oh, and there are NO semi-colons!  I strongly recommend it as a beginner programming language.</p>
+      <div id='more1' >
+        <a id='moreLink' style="display:block; text-align:left"><h3>MORE</h3></a>
       </div>
-      <h3><a href="#blog">HIDE</a></h3>
-
+      <div style="display:none" id='hide1'><h3><a  href="#blog">HIDE</a></h3></div>
     </div>
 `
+  var moreDiv = document.getElementById('more1');
+  moreDiv.addEventListener('click',showMore);
+  var moreLink = document.getElementById('moreLink')
 
+  var hideDiv = document.getElementById('hide1');
+  hideDiv.addEventListener('click',hideMore);
+
+  function showMore(){
+    hideDiv.removeAttribute("style")
+    moreDiv.innerHTML = `
+      <p>I am a big fan of Python. It’s an easy to read programming language and it works across all platforms (Windows, Linux and OS). It comes pre-installed on Linux, but I’d recommend you upgrade to the latest version (3.6.1, when I last checked). </p>
+      <p>Originally, I decided to learn Python because it’s widely used to program machine learning algorithms, which I am keen to experiment with. Another reason was that it is used on some nifty open source software packages such as Dynamo and Blender.</p>
+      <p>Overall, it’s a pretty cool programming language to learn. Most of the libraries are easy to install and you can quickly create little apps, without too much effort. If you want to make desktop apps, Python can help you do that. There are some really great tutorials and Udemy courses to help you on your way.</p>
+      <p>There are a number of pitfalls to be aware of.</p>
+      <ul>
+        <p><b>Python 2 versus Python 3</b></p>
+        <li>There are subtle differences between 2.7 and 3.5 or later. Some of the libraries haven’t been updated for over 3 years and it can be troublesome. MySql in particular caused me some grief.</li>
+        <p><b>Virtual Environments</b></p>
+        <li>I recommend using virtual environments when you make apps in Python. It keeps your apps neatly packaged.</li>
+        <p><b>Making Code work between Linux and Windows</b></p>
+        <li>Keep in mind that you will require different packages depending on which OS the app is interacting with.</li>
+      </ul>
+      <p>Overall I found Python easy to read. Documentation is thorough and fairly easy to follow.  Functions such as For Loops, for example, are very straight-forward to write. Oh, and there are NO semi-colons!  I strongly recommend it as a beginner programming language.</p>
+    `
+  }
+  function hideMore(){
+    while (moreDiv.hasChildNodes()) {
+      moreDiv.removeChild(moreDiv.firstChild);
+    }
+    moreDiv.innerHTML = `
+      <a id='moreLink' style="display:block; text-align:left"><h3>MORE</h3></a>
+    `
+    hideDiv.setAttribute("style", "display: none");
+  }
 }
 
   //
