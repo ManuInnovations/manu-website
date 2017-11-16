@@ -1,24 +1,22 @@
-window.onload = function(){
+window.onload=function(){
 
 var blogDiv = document.getElementById('blog-posts');
 var previousBlog = blogDiv.firstChild;
 var newBlog = document.createElement('div');
+
+var index = document.getElementById('index');
+var indexItem = document.createElement("LI");
+
+//change the blogID and BlogTitle
 var blogId = 1;
+var blogTitle = 'Why Python should be your new best friend';
+
 var showBlog = 'more'+blogId;
 var hideBlog = 'hide'+blogId;
-var blogSetup = (`
-    <div id=${showBlog}>
-      <h3><a style=" display:block; text-align:left">MORE</a></h3>
-    </div>
-    <div id=${hideBlog} style="display:none" >
-      <h3><a  href="#blog">HIDE</a></h3>
-    </div>
-  </div>
-  `)
 
 var blogStart = (`
-  <div class="col-md-8">
-    <h2>Why Python Should be your New Best Friend</h2>
+  <div class="col-md-8" id=${"blog"+blogId}>
+    <h2>${blogTitle}</h2>
     <h3>By Anna-Marie Vos</h3>
     <p><span class="fa fa-calendar"></span> Posted on August 22, 2017</p>
 `)
@@ -77,9 +75,24 @@ var blogMore = (`
     are NO semi-colons!  I strongly recommend it as a
     beginner programming language.
   </p>
+`)
+
+var indexItemText = (`
+  <a href=${"#"+"blog"+blogId}>${blogTitle}</a>
+`)
+
+var blogSetup = (`
+    <div id=${showBlog}>
+      <h3><a style=" display:block; text-align:left">MORE</a></h3>
+    </div>
+    <div id=${hideBlog} style="display:none" >
+      <h3><a  href="#blog">HIDE</a></h3>
+    </div>
+  </div>
   `)
 
-
+indexItem.innerHTML = indexItemText;
+index.appendChild(indexItem);
 
 newBlog.setAttribute('class', 'row blog_post');
 blogDiv.insertBefore(newBlog, previousBlog);
