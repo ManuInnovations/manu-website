@@ -43,5 +43,18 @@ jQuery.fn[sr]=function(fn){
   setSlideNav();
   setHeaderBackground();
   jQuery('#scrollToContent').click(function(e){
-    e.preventDefault();jQuery.scrollTo("#love",1000,{offset:-(jQuery('#header .top').height()),axis:'y'});});jQuery('nav > ul > li > a').click(function(e){e.preventDefault();jQuery.scrollTo(jQuery(this).attr('href'),400,{offset:-(jQuery('#header .top').height()),axis:'y'});})
+    e.preventDefault();
+    jQuery.scrollTo("#love",1000,{offset:-(jQuery('#header .top').height()),axis:'y'});
+  });
+  jQuery('nav > ul > li > a').click(function(e){
+    e.preventDefault();
+    jQuery.scrollTo(jQuery(thiclasss).attr('href'),400,{offset:-(jQuery('#header .top').height()),axis:'y'});
+  })
 jQuery(window).scroll(function(){setHeaderBackground();});})();
+
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
