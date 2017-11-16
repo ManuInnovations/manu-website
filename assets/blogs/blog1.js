@@ -17,7 +17,7 @@ var hideBlog = 'hide'+blogId;
 
 var blogStart = (`
   <div id=${"blog"+blogId}>
-    <h2>${blogTitle}</h2>
+    <h2 style="text-align: center">${blogTitle}</h2>
     <h3>By Anna-Marie Vos</h3>
     <p><span class="fa fa-calendar"></span> Posted on August 22, 2017</p>
 `)
@@ -53,20 +53,26 @@ var blogMore = (`
   <ul>
     <p><b>Python 2 versus Python 3</b></p>
     <li>
-      There are subtle differences between 2.7 and
-      3.5 or later. Some of the libraries haven’t been
-      updated for over 3 years and it can be troublesome.
-      MySql in particular caused me some grief.
+      <p>
+        There are subtle differences between 2.7 and
+        3.5 or later. Some of the libraries haven’t been
+        updated for over 3 years and it can be troublesome.
+        MySql in particular caused me some grief.
+      </p>
     </li>
     <p><b>Virtual Environments</b></p>
     <li>
-      I recommend using virtual environments when you make apps
-      in Python. It keeps your apps neatly packaged.
+      <p>
+        I recommend using virtual environments when you make apps
+        in Python. It keeps your apps neatly packaged.
+      </p>
     </li>
     <p><b>Making Code work between Linux and Windows</b></p>
     <li>
-      Keep in mind that you will require different packages
-      depending on which OS the app is interacting with.
+      <p>
+        Keep in mind that you will require different packages
+        depending on which OS the app is interacting with.
+      </p>
     </li>
   </ul>
   <p>
@@ -96,7 +102,6 @@ indexItem.innerHTML = indexItemText;
 index.appendChild(indexItem);
 
 newBlog.setAttribute('class', 'col-md-8 blog_post');
-newBlog.setAttribute('style','text-align: center');
 blogDiv.insertBefore(newBlog, previousBlog);
 
 newBlog.innerHTML = blogStart+blogLead+blogSetup
