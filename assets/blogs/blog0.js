@@ -1,4 +1,5 @@
-window.onload = function(){
+window.addEventListener('load',blog)
+function blog(){
 
 var blogDiv = document.getElementById('blog-posts');
 var previousBlog = blogDiv.firstChild;
@@ -15,7 +16,7 @@ var showBlog = 'more'+blogId;
 var hideBlog = 'hide'+blogId;
 
 var blogStart = (`
-  <div class="col-md-8" id=${"blog"+blogId}>
+  <div id=${"blog"+blogId}>
     <h2>${blogTitle}</h2>
     <h3>By Janie Tito</h3>
     <p><span class="fa fa-calendar">
@@ -150,7 +151,8 @@ var blogSetup = (`
 indexItem.innerHTML = indexItemText;
 index.appendChild(indexItem);
 
-newBlog.setAttribute('class', 'row blog_post');
+newBlog.setAttribute('class', 'col-md-8 blog_post');
+newBlog.setAttribute('style','text-align: center');
 blogDiv.insertBefore(newBlog, previousBlog);
 
 newBlog.innerHTML = blogStart+blogLead+blogSetup
