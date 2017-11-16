@@ -24,7 +24,7 @@ var blogStart = (`
 `)
 //add your main paraghaph here
 var blogLead = (`
-  <p id="lead">
+  <p class="lead">
     If like me, you’ve considered learning a new programming language,
     but wonder which one to pick first? I recommend Python.
     Let me tell you why it’s awesome.

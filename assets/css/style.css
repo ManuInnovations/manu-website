@@ -269,7 +269,7 @@ h6 {
     text-align: center;
 }
 
-#values {
+.values {
     color: #4da7ca;
     -o-transition: all .4s;
     -ms-transition: all .4s;
@@ -281,7 +281,7 @@ h6 {
     cursor: default;
 }
 
-#value-btn {
+.value-btn {
     cursor: default;
 }
 
@@ -427,7 +427,7 @@ h6 {
   text-align: left;
 }
 
-#lead {
+.lead {
   text-align: left;
 }
 

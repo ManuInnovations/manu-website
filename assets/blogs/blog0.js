@@ -25,7 +25,7 @@ var blogStart = (`
 `)
 //add your main paraghaph here
 var blogLead = (`
-  <p id="lead">
+  <p class="lead">
     We all do it. Come up against a problem or an irksome task
     and think 'I should make an app to do that' (or at least,
     I wish I knew how to).  But how to decide which of the
