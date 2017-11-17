@@ -14,7 +14,7 @@
  **/
 
 
-/**General Styles**/
+/** General Styles **/
 
 * {
     outline: none !important;
@@ -119,7 +119,7 @@ h6 {
     margin-top: 60px;
 }
 
-/**Header**/
+/** Header **/
 
 #header {
     position: relative;
@@ -263,7 +263,7 @@ h6 {
     color: white;
 }
 
-/**Stuff We Love**/
+/** Stuff We Love **/
 
 #love {
     text-align: center;
@@ -333,7 +333,7 @@ h6 {
     opacity: 1;
 }
 
-/**What We Do**/
+/** What We Do **/
 
 #services h1,
 #services h2 {
@@ -353,7 +353,7 @@ h6 {
     padding: 0 25px;
 }
 
-/**Team Manu**/
+/** Team Manu **/
 
 #team {
     text-align: center;
@@ -379,7 +379,7 @@ h6 {
     margin-bottom: -50px;
 }
 
-/**About Us**/
+/** About Us **/
 
 #proverb {
     font-size: 1.5em;
@@ -400,11 +400,12 @@ h6 {
     color: white;
 }
 
-/**Manu Blog*********************/
+/** Manu Blog ********/
 
 
 #blog {
-    text-align: center;
+  text-align: center;
+  padding: 1em 1em 0;
 }
 
 #blog .personal-bio > img {
@@ -423,12 +424,9 @@ h6 {
     margin-bottom: -50px;
 }
 
-.blog_post {
-  text-align: left;
-}
-
 #lead {
   text-align: left;
+
 }
 
 /** Contact Us ******************/
@@ -477,7 +475,7 @@ a:hover #phone-btn {
     opacity: 1;
 }
 
-/**Footer**/
+/** Footer **/
 
 #footer {
     background: #475B6F;
@@ -488,7 +486,7 @@ a:hover #phone-btn {
     padding: 15px;
 }
 
-/**Media Queries**/
+/** Media Queries **/
 
 @media screen and (max-width:767px) and (orientation:landscape) {
   #header.header-wrapper {
